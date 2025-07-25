@@ -9,7 +9,7 @@ int main() {
     int N,M;
     cin>>N>>M;
 
-    int adj[1001][1001] = {0};  // 인접 행렬 초기화
+    int adj[1001][101] = {0};  // 인접 행렬 초기화
 
     // M개의 친구 관계 입력
     for (int i = 0; i < M; i++) {
@@ -23,11 +23,9 @@ int main() {
     for (int i = 1; i <= N; i++) {
         int count = 0;
         for (int j = 1; j <= N; j++) {
-            if (adj[i][j] == 1) {
-                count++;
-            }
+            if (adj[i][j] == 1) count++;
         }
-        cout<<count<<'\n';
+        cout << i << " " << count << '\n';  // 사람 번호와 친구 수 같이 출력
     }
 
     return 0;
