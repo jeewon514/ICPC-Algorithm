@@ -9,7 +9,7 @@ int main() {
     int N,M;
     cin>>N>>M;
 
-    int adj[1001][101] = {0};  // 인접 행렬 초기화
+    int adj[101][101] = {0};  // 인접 행렬 초기화
 
     // M개의 친구 관계 입력
     for (int i = 0; i < M; i++) {
@@ -30,3 +30,4 @@ int main() {
 
     return 0;
 }
+
